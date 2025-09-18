@@ -1,5 +1,3 @@
--- ~/.config/nvim/lua/plugins/treesitter.lua
-
 return {
   -- Install nvim-treesitter
   {
@@ -8,7 +6,7 @@ return {
     config = function()
       -- Basic Treesitter Setup
       require'nvim-treesitter.configs'.setup {
-        ensure_installed = {"lua", "go", "c"},  -- Automatically install parsers for all supported languages
+        ensure_installed = {"lua", "go", "c", "javascript"},  -- Automatically install parsers for all supported languages
         highlight = {
           enable = true,            -- Enable Treesitter syntax highlighting
           additional_vim_regex_highlighting = false, -- Disable traditional vim regex highlighting
